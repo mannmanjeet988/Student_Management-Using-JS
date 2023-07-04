@@ -2,9 +2,7 @@
 
 //ARRAY OF STUDENTS----->
 let students =  JSON.parse(localStorage.getItem('students')) || [
-    { ID: 1, name: 'Alice', age: 21, gpa: 9.2, degree: 'Btech', email: 'alice@example.com' },
-    { ID: 2, name: 'Bob', age: 22, gpa: 8.5, degree: 'MBA', email: 'bob@example.com' },
-    { ID: 3, name: 'Charlie', age: 20, gpa: 9.9, degree: 'Arts', email: 'charlie@example.com' }
+    { ID: 1, name: 'Alice', age: 21, gpa: 9.2, degree: 'Btech', email: 'alice@example.com' }
   ];
 
 // Get DOM elements
