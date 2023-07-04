@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F2-Module Test</title>
+    <link href="./style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="conatiner">
+        <h2>Student Management CRUD</h2>
+        <form method="post"  id="studentForm" class="studentForm">
+            <input type="hidden" id="studentId">
+             <div class="info">
+                <input type="text" name="name" id="name" placeholder="Name" required>
+             </div>
+             <div class="info">
+                <input type="email"  name="email" id="email" placeholder="Email" required>4
+             </div>
+             <div class="info">
+                <input type="text" name="gpa" id="gpa" placeholder="GPA" required>
+             </div>
+             <div class="info">
+                <input type="number" name="age" id="age" placeholder="Age" required>
+             </div>
+             <div class="info">
+                <input type="text" name="degree" id="degree" placeholder="Degree" required>
+             </div>
+             <button type="submit" class="btn" id="submitButton">Add Student</button>
+        </form>
+
+        <!-- <button class="btn" type="submit">Add Student</button> -->
+
+        <div class="search" >
+            <input type="text" name="search" id="searchInput" placeholder="Search by Name,email or degree" required>
+         </div>
+
+         <table class="table">
+            <thead>
+                <tr>
+                  <th class="studentId">ID</th>
+                  <th class="name">Name</th>
+                  <th class="email">Email</th>
+                  <th class="age">Age</th>
+                  <th class="gpa">GPA</th>
+                  <th class="degree">Degree</th>  
+                  <th class="action">Actions</th>
+                </tr>
+            </thead>
+            <tbody class="studentTableBody" id="studentTableBody">
+                <!-- <tr>
+                    <td class="id">1</td>
+                    <td class="Student Name"></td>
+                    <td class="email"></td>
+                    <td class="age"></td>
+                    <td class="gpa"></td>
+                    <td class="degree"></td>  
+                  </tr> -->
+            </tbody>
+         </table>
+    </div>
+    
+    <script src="./index.js"></script>
+</body>
+</html>
