@@ -3,25 +3,25 @@
     padding:0;
      background-color: #111111;
      font-family: 'Inter Tight', sans-serif;
+     color:blueviolet;
 }
 
 h2{
   color:white;
   text-align: left;
-  padding:20px 40px;
+  padding:20px 50px;
+  font-size: 24px;
+  color:blueviolet;
+  font-weight: 200;
 }
 
 .conatiner{
     position:relative;
-    top:80px;
-    margin:auto;
-    width: 1100px;
-    height:80vh;
-    border: 1px solid white;
+    top:30px;
+    margin:auto; 
 }
 
 .studentForm{
-   
     display:grid;
     grid-template-columns: repeat(3,30%);
     column-gap:20px;
@@ -35,47 +35,77 @@ h2{
     padding:10px;
     /* max-width:300px; */
     border:1px solid white;
-    color:violet;
+    color:palegreen;
 }
 
 #studentForm input[type="text"],
 #studentForm input[type="number"],
-#studentForm input[type="email"] {
-  width: 250px;
+#studentForm input[type="email"],
+#studentForm input[type="tel"] {
+  width: 300px;
   margin-bottom: 10px;
 }
 
 .btn{
 background-color: white;
 color:blueviolet;
-margin-left:50px;
+margin-left:30px;
 font-weight: 600;
 padding:10px 20px;
 width:300px;
 }
 
 .search input{
-    width:80%;
+    width:88%;
     margin:20px 20px 20px 50px;
     border:1px solid white;
     padding:10px ;
+    outline:none;
+    color:white;
 }
 
-.table{
-    
-    width:80%;
-    margin:20px 20px 20px 50px;
+/* .search input::placeholder { 
+    color: violet;
+    opacity: 1; 
+  } */
+
+.table{   
+    width:90%;
+    margin:20px 50px ;
     /* border:1px solid white ; */
     border-collapse: collapse;
+    border:1px solid white ;   
+    text-align: left;
     
+    /* padding:10px; */
 }
 
-table,td,tr{
-    border:1px solid white ;
+th{
+    border:1px solid white ; 
+    background-color:rgba(245, 245, 245, 0.712);
+}
+
+td,th{ 
+    text-align: left;
     padding:10px;
-    color:hotpink;
 }
 
-.Student Name{
+
+table,td,tr{  
+    padding:10px;
+    text-align: left;
+    border:1px solid white ; 
+    background-color:whitesmoke;
+}
+
+.table .name{
     column-span:3;
+}
+
+.degree td{
+    border:none;
+}
+
+.email, .name{
+    column-count: 3;
 }
